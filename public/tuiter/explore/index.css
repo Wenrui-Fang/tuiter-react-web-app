@@ -1,0 +1,103 @@
+body {
+    font-family: Arial;
+    background-color: black;
+    color: white;
+    border-color: rgb(47, 51, 54);
+    padding-left: 16px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-fg-color-white {
+    color: rgb(110, 118, 125);
+}
+
+.wd-bg-color-darkgray {
+    background-color: darkgray;
+}
+
+.wd-margin-right-12 {
+    margin-right: 12px;
+}
+
+.wd-nav-tabs {
+    color: rgb(110, 118, 125);
+}
+
+.wd-nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-nav-tabs .wd-tab-selected {
+    border-bottom: solid;
+    width: 60px;
+    color: rgb(29, 161, 242);
+}
+
+.wd-posts-topic-number {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin: 5px;
+}
+
+.wd-posts-topic-number-white {
+    font-size: 13px;
+    margin: 5px;
+}
+
+.wd-posts-topic-number-lightgray {
+    font-size: 13px;
+    color: lightgray;
+    margin: 5px;
+}
+
+.wd-posts-title {
+    font-size: 15px;
+    margin: 5px;
+}
+
+.wd-posts-img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    float: right;
+}
+
+.float-done{
+    clear: both;
+}
+
+
+
+
+
+
+.fg-color-red {
+    color: #ff7070;
+}
+
+.border-thin {
+    border-width: 4px;
+}
+
+.border-blue {
+    border-color: #7070ff;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.padding-fat {
+    padding: 50px;
+}
