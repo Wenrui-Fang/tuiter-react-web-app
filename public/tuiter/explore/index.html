@@ -3,64 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+
     <link href="index.css"
           rel="stylesheet"/>
 </head>
 <body>
-<div class="wd-border wd-border-fat">
-    <input type="text" class="wd-search-twitter"
-           placeholder="Search Tuiter"/>
-    <a class="wd-gear" href="explore-settings.html">&#x2699;</a>
-    <ul class="wd-nav-tabs">
-        <li class="wd-tab-selected">For you</li>
-        <li>Trending</li>
-        <li>COVID-19</li>
-        <li>News</li>
-        <li>Sports</li>
-        <li>Entertainment</li>
-    </ul>
-</div>
+<div class="container pt-1">
+    <div class="row">
+        <div class="col-2">
+            <div class="list-group">
+                <div class="list-group-item list-group-item-action">
+                    <i class="fab fa-twitter fa-1x"></i>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-home"></i>
+                    <a href="#" class="text-decoration-none text-black">Home</a>
+                </div>
+                <div class="list-group-item list-group-item-action active">
+                    <i class="fas fa-hashtag"></i>
+                    <a href="#" class="text-decoration-none text-white">Explore</a>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-bell"></i>
+                    <a href="#" class="text-decoration-none text-black">Notifications</a>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-envelope"></i>
+                    <a href="#" class="text-decoration-none text-black">Messages</a>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-bookmark"></i>
+                    <a href="#" class="text-decoration-none text-black">Bookmarks</a>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-list"></i>
+                    <a href="#" class="text-decoration-none text-black">Lists</a>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-user"></i>
+                    <a href="#" class="text-decoration-none text-black">Profile</a>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <a href="#" class="text-decoration-none text-black">More</a>
+                </div>
+            </div>
+            <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-9">
+                    <div class="position-relative">
+                        <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter">
+                        <i class="fas fa-search position-absolute wd-search-tuiter-icon"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="position-relative">
+                        <i class="position-absolute wd-search-cog-icon fas fa-cog text-primary"></i>
+                    </div>
+                </div>
+            </div>
 
-<div class="wd-border">
-    <div>
-        <h3 class="wd-posts-topic-number">Trending in Science</h3>
-        <h1 class="wd-posts-title">Starship</h1>
-        <h3 class="wd-posts-topic-number">55.5K Tweets</h3>
+            <ul class="nav nav-tabs mt-1">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Entertainment</a>
+                </li>
+            </ul>
+            <div class="position-relative">
+                <img src="../../images/starship.jpg" class="mt-1" width="100%"/>
+                <h2 class="position-absolute bottom-0 start-0 text-white">SpaceX's Starship</h2>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                ReactJS - 2h
+                            </div>
+                            <div class="fw-bolder">
+                                React is a .....
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="../../images/react.png" height="70px">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-4">
+            who to follow
+        </div>
     </div>
-    <br/>
-    <div>
-        <h3 class="wd-posts-topic-number">Sports Trending</h3>
-        <h1 class="wd-posts-title">Joe Rogan</h1>
-        <h3 class="wd-posts-topic-number">5,218 Tweets</h3>
-    </div>
-</div>
-
-<div class="wd-border">
-    <h3 class="wd-posts-topic-number-white">The New York Times <span class="wd-fg-color-white">Yesterday</span></h3>
-    <h1 class="wd-posts-title">Live Updates: Death Toll Rises After Indonesian Soccer Match</h1>
-    <img class="wd-posts-img" src="death.jpg"/>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-border">
-    <h3 class="wd-posts-topic-number">NBA LIVE</h3>
-    <h1 class="wd-posts-title">HOUSTON ROCKETS, OKLAHOMA CITY THUNDER AGREE ON 8-PLAYER TRADE</h1>
-    <img class="wd-posts-img" src="NBA.jpg"/>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-border">
-    <h3 class="wd-posts-topic-number-white">Amazon News <span class="wd-fg-color-white">Yesterday</span></h3>
-    <h1 class="wd-posts-title">Meet Alexa Voice Remote Pro for @amazonfiretv</h1>
-    <img class="wd-posts-img" src="Alexa.jpg"/>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-border">
-    <h3 class="wd-posts-topic-number">COVID-19 LIVE</h3>
-    <h1 class="wd-posts-title">These scientists traced a new coronavirus lineage to one office — through sewage</h1>
-    <img class="wd-posts-img" src="covid.jpg"/>
-    <div class="wd-float-done"></div>
 </div>
 </body>
 </html>
