@@ -5,29 +5,21 @@
     <title>Title</title>
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet"/>
 
     <link href="index.css"
           rel="stylesheet"/>
 </head>
 <body>
 <div class="container pt-1">
-    <h2>Hiding and showing responsive content</h2>
-    <div class="d-block d-sm-none fa-2x">XS</div>
-    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
-    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
-    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
-    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-    <div class="d-none d-xxl-block fa-2x">XXL</div>
-
-
     <div class="row">
         <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action">
-                    <i class="fab fa-twitter fa-1x"></i>
+            <div class="list-group wd-fa-1_5x">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <i class="fa-solid fa-t text-white"></i>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-home"></i>
@@ -38,7 +30,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action active">
+                <div class="list-group-item list-group-item-action bg-black">
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -50,8 +42,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-bell"></i>
@@ -62,8 +54,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-envelope"></i>
@@ -74,8 +66,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-bookmark"></i>
@@ -86,8 +78,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-list"></i>
@@ -98,8 +90,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-user"></i>
@@ -110,8 +102,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-black">
+                <div class="list-group-item list-group-item-action bg-black">
+                    <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-ellipsis-h"></i>
@@ -126,127 +118,129 @@
             <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
         </div>
         <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10">
-            <div class="row">
-                <div class="col-9">
-                    <div class="position-relative">
-                        <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter">
-                        <i class="fas fa-search position-absolute wd-search-tuiter-icon"></i>
+            <div class="wd-border-main">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="position-relative ms-3">
+                            <input class="ps-5 form-control rounded-pill bg-dark" placeholder="Search Tuiter">
+                            <i class="fas fa-search position-absolute wd-search-tuiter-icon text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="position-relative">
+                            <i class="position-absolute fas fa-cog text-white fa-1x wd-search-cog-icon"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="position-relative">
-                        <i class="position-absolute wd-search-cog-icon fas fa-cog text-primary fa-2x"></i>
-                    </div>
-                </div>
-            </div>
 
-            <ul class="nav nav-tabs mt-1">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">For you</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Trending</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-none d-md-block nav-link " href="#">Entertainment</a>
-                </li>
-            </ul>
-            <div class="position-relative">
-                <img src="../../images/starship.jpg" class="mt-1" width="100%"/>
-                <h2 class="position-absolute bottom-0 start-0 text-white ps-2">SpaceX's Starship</h2>
+                <!--            <ul class="mt-1 wd-nav-tabs">-->
+                <!--                <li>-->
+                <!--                    <a class="nav-link" href="#">For you</a>-->
+                <!--                </li>-->
+                <!--                <li>-->
+                <!--                    <a class="nav-link" href="#">Trending</a>-->
+                <!--                </li>-->
+                <!--                <li>-->
+                <!--                    <a class="nav-link" href="#">News</a>-->
+                <!--                </li>-->
+                <!--                <li>-->
+                <!--                    <a class="nav-link" href="#">Sports</a>-->
+                <!--                </li>-->
+                <!--                <li>-->
+                <!--                    <a class="d-none d-md-block nav-link wd-tab-selected" href="#">Entertainment</a>-->
+                <!--                </li>-->
+                <!--            </ul>-->
+                <div class="row ms-1 pt-3 me-4 text-secondary">
+                    <div class="col-2">
+                        <a class="nav-link" href="#">For you</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="nav-link" href="#">Trending</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="nav-link" href="#">COVID-19</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="nav-link" href="#">News</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="nav-link" href="#">Sports</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="d-none d-md-block nav-link wd-tab-selected" href="#">Entertainment</a>
+                    </div>
+                </div>
             </div>
-            <ul class="list-group">
-                <li class="list-group-item">
+            <div class="position-relative wd-border-main">
+                <img src="../../images/myuniverse.jpeg" class="mt-1" width="100%"/>
+                <h5 class="position-absolute bottom-0 start-0 ms-3">Music · Last night
+                    <span>
+                        <h3>BTS and Coldplay release their song, My Universe</h3>
+                        <i class="fab fa-reddit-alien wd-ufo-icon-color"></i>
+                    </span>
+                </h5>
+            </div>
+            <ul class="list-group wd-border-main">
+                <li class="list-group-item bg-black">
                     <div class="row">
                         <div class="col-10">
                             <div class="text-secondary">
-                                Web Development
+                                Trending in R&B & soul
                             </div>
                             <div class="fw-bolder">
-                                ReactJS
-                                <span class="fa-stack wd-tick-icon">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
-                                </span>
-                                <span class="text-secondary fw-normal">- 2h</span>
+                                <h5 class="text-white mb-0">
+                                    R Kelly
+                                </h5>
                             </div>
-                            <div class="fw-bolder">
-                                React.js is a component based front end library that makes it very easy to build Single
-                                Page Applications or SPAs
+                            <div class="text-secondary">
+                                18.2K Tuits
                             </div>
                         </div>
                         <div class="col-2">
-                            <img class="float-end" src="../../images/react.png" height="80px">
+                            <i class="fas fa-ellipsis-h text-secondary float-end mt-1"></i>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-black">
                     <div class="row">
                         <div class="col-10">
-                            <div class="fw-bolder">
-                                JavaScript
-                                <span class="fa-stack wd-tick-icon">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
-                                </span>
-                                <span class="text-secondary fw-normal">- 2h</span>
+                            <div class="text-secondary">
+                                Trending in R&B & soul
                             </div>
-                            <div class="fw-bolder text-wrap pe-1">
-                                JavaScript is programming language that can run on browsers as well as desktops
+                            <div class="fw-bolder">
+                                <h5 class="text-white mb-0">
+                                    Chloe
+                                </h5>
                             </div>
                             <div class="text-secondary">
-                                123K Tuits
+                                Trending with <span class="text-primary">Halle</span>
                             </div>
                         </div>
                         <div class="col-2">
-                            <img class="float-end rounded" src="../../images/javascript.png" height="80px">
+                            <i class="fas fa-ellipsis-h text-secondary float-end mt-1"></i>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-black">
                     <div class="row">
                         <div class="col-10">
-                            <div class="text-secondary">
-                                Web Development
-                            </div>
-                            <div class="fw-bolder">
-                                jQuery
-                            </div>
-                            <div class="text-secondary">
-                                123K Tuits
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <img class="float-end" src="../../images/jQuery.png" height="80px">
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-10">
-                            <div class="text-secondary">
-                                Web Development
-                            </div>
-                            <div class="fw-bolder">
-                                NodeJS
+                            <div class="fw-bolder text-white">
+                                <i class="fa-solid fa-t text-white me-2"></i>
+                                The times
                                 <span class="fa-stack wd-tick-icon">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
+                                    <i class="fas fa-circle fa-stack-2x text-white"></i>
+                                    <i class="fas fa-check fa-stack-1x fa-inverse text-black"></i>
                                 </span>
-                                <span class="text-secondary fw-normal">- 2h</span>
+                                <span class="text-secondary fw-normal">· September 24, 2021</span>
                             </div>
-                            <div class="text-secondary">
-                                123K Tuits
+                            <div class="text-white">
+                                <h5 class="text-white">
+                                    Stanley Tucci: 'Food or sex? That's the cruelest question...'
+                                </h5>
                             </div>
                         </div>
                         <div class="col-2">
-                            <img class="float-end" src="../../images/nodejs.png" height="80px">
+                            <img class="float-end" src="../../images/StanleyTucci.jpeg" height="80px">
                         </div>
                     </div>
                 </li>
@@ -254,104 +248,57 @@
         </div>
         <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action fw-bolder">
-                    Who to follow
+                <div class="list-group-item list-group-item-action fw-bolder wd-follow-bg-color text-white">
+                    <h4 class="fw-bold">Who to follow</h4>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item list-group-item-action wd-follow-bg-color text-white">
                     <div class="row">
                         <div class="col-2">
-                            <img class="rounded-circle" src="../../images/Java.jpeg" width="45px" height="45px">
+                            <img class="rounded-circle" src="../../images/bee.png" width="45px" height="45px">
                         </div>
                         <div class="col-7">
-                            <div class="fw-bolder">Java
+                            <div class="fw-bolder">The Babylon Bee
                                 <span class="fa-stack wd-tick-icon">
                                     <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
+                                    <i class="fas fa-check fa-stack-1x fa-inverse text-black"></i>
                                 </span>
                             </div>
-                            <div class="text-secondary">@Java</div>
+                            <div class="text-secondary">@TheBabylonBee</div>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-primary mt-1 rounded-pill">Follow</button>
+                            <button class="btn btn-light mt-1 rounded-pill">Follow</button>
                         </div>
                     </div>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item list-group-item-action wd-follow-bg-color text-white">
                     <div class="row">
                         <div class="col-2">
-                            <img class="rounded-circle" src="../../images/relativity.png" width="45px" height="45px">
+                            <img class="rounded-circle" src="../../images/Jack.jpeg" width="45px" height="45px">
                         </div>
                         <div class="col-7">
-                            <div class="fw-bolder">Relativity Space
+                            <div class="fw-bolder">Jack Posobiec
+                                <i class="fas fa-flag-usa"></i>
                                 <span class="fa-stack wd-tick-icon">
                                     <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
+                                    <i class="fas fa-check fa-stack-1x fa-inverse text-black"></i>
                                 </span>
                             </div>
-                            <div class="text-secondary">@relativityspace</div>
+                            <div class="text-secondary">@JackPosobiec</div>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-primary mt-1 rounded-pill">Follow</button>
+                            <button class="btn btn-light mt-1 rounded-pill">Follow</button>
                         </div>
                     </div>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <div class="row">
-                        <div class="col-2">
-                            <img class="rounded-circle" src="../../images/virgin.png" width="45px" height="45px">
-                        </div>
-                        <div class="col-7">
-                            <div class="fw-bolder">Virgin Galactic
-                                <span class="fa-stack wd-tick-icon">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
-                                </span>
-                            </div>
-                            <div class="text-secondary">@virgingalactic</div>
-                        </div>
-                        <div class="col-3">
-                            <button class="btn btn-primary mt-1 rounded-pill">Follow</button>
-                        </div>
-                    </div>
+                <div class="list-group-item list-group-item-action wd-follow-bg-color text-primary ps-3">
+                    Show more
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <div class="row">
-                        <div class="col-2">
-                            <img class="rounded-circle" src="../../images/NASA.jpeg" width="45px" height="45px">
-                        </div>
-                        <div class="col-7">
-                            <div class="fw-bolder">NASA
-                                <span class="fa-stack wd-tick-icon">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
-                                </span>
-                            </div>
-                            <div class="text-secondary">@NASA</div>
-                        </div>
-                        <div class="col-3">
-                            <button class="btn btn-primary mt-1 rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="list-group-item list-group-item-action">
-                    <div class="row">
-                        <div class="col-2">
-                            <img class="rounded-circle" src="../../images/Tesla.png" width="45px" height="45px">
-                        </div>
-                        <div class="col-7">
-                            <div class="fw-bolder">Tesla
-                                <span class="fa-stack wd-tick-icon">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-check fa-stack-1x fa-inverse "></i>
-                                </span>
-                            </div>
-                            <div class="text-secondary">@Tesla</div>
-                        </div>
-                        <div class="col-3">
-                            <button class="btn btn-primary mt-1 rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="wd-follow-text text-secondary">
+                Term of Service&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;Cookie Policy<br/>
+                Ads info&nbsp;&nbsp;&nbsp;More ···&nbsp;&nbsp;&nbsp;
+                <i class="far fa-copyright"></i>
+                2021 Tuiter, Inc.
             </div>
         </div>
     </div>

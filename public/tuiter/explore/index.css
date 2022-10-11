@@ -4,10 +4,65 @@
 }
 
 .wd-search-cog-icon {
-    top: 6px;
-    right: 0px;
+    top: 15px;
+    right: 20px;
 }
 
 .wd-tick-icon {
     font-size: 0.5em;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/*.wd-nav-tabs {*/
+/*    color: rgb(110, 118, 125);*/
+/*    padding: 0px;*/
+/*}*/
+
+/*.wd-nav-tabs li {*/
+/*    list-style-type: none;*/
+/*    display: inline-block;*/
+/*    font-size: 15px;*/
+/*    padding: 16px;*/
+/*}*/
+
+.wd-tab-selected {
+    border-bottom: 3px solid;
+    width: 100px;
+    border-color: deepskyblue;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.wd-fa-1_5x {
+    font-size: 1.5em;
+}
+
+.wd-border-main {
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-border-follow {
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-follow-bg-color {
+    background-color: rgb(47, 51, 54);
+}
+
+.wd-follow-text {
+    font-size: 0.5em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.wd-ufo-icon-color {
+    color: orange;
 }
