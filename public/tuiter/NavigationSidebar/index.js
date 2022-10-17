@@ -1,11 +1,14 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
+    let url = $(location).attr('href');
+    let split = url.split('/');
+    active = split[split.length - 2];
     return (`
             <div class="list-group">
                 <div class="list-group-item list-group-item-action">
                     <i class="fab fa-twitter fa-1x"></i>
                 </div>
-                <div class="list-group-item list-group-item-action">
-                    <a href="#" class="text-decoration-none text-white">
+                ${active === 'HomeScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
+                    <a href="../HomeScreen/index.html" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-home"></i>
@@ -16,8 +19,8 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action active">
-                    <a href="#" class="text-decoration-none text-white">
+                ${active === 'explore' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
+                    <a href="../explore/index.html" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-hashtag"></i>
@@ -28,7 +31,7 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                ${active === 'NotificationsScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -40,7 +43,7 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                ${active === 'MessagesScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -52,7 +55,7 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                ${active === 'BookmarksScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -64,7 +67,7 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                ${active === 'ListsScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -76,7 +79,7 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                ${active === 'ProfileScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -88,7 +91,7 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                ${active === 'MoreScreen' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
                     <a href="#" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
@@ -102,7 +105,6 @@ const NavigationSidebar = () => {
                 </div>
             </div>
             <button class="btn btn-primary w-100 mt-1 rounded-pill">Tweet</button>
-
  `);
 }
 export default NavigationSidebar;
