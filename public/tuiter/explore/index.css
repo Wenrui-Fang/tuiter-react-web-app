@@ -4,8 +4,8 @@
 }
 
 .wd-search-cog-icon {
-    top: 15px;
-    right: 20px;
+    top: 3px;
+    right: 5px;
 }
 
 .wd-tick-icon {
@@ -65,4 +65,18 @@ body {
 
 .wd-ufo-icon-color {
     color: orange;
+}
+
+.wd-content-img-border {
+    width: 504px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-content-img-text-border {
+    width: 504px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
