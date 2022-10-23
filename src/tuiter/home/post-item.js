@@ -32,7 +32,7 @@ const PostItem = (
                         <p className="fw-normal">{post.topic}</p>
                     </div>
                     <div className="wd-border-main overflow-hidden wd-content-img-border">
-                        <img width={504} height={300} alt="post image" src={post.image}/>
+                        <img width={504} height={300} alt="post" src={post.image}/>
                     </div>
                     <div className="wd-border-main wd-content-img-text-border">
                         <div className="fw-bolder">{post.title}</div>

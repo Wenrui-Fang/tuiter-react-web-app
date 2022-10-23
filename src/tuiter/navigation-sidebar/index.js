@@ -43,7 +43,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="#">
+                <a className="text-decoration-none text-black" href="https://www.google.com/">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-bell-fill"></i>
@@ -56,7 +56,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="#">
+                <a className="text-decoration-none text-black" href="https://www.google.com/">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-envelope-fill"></i>
@@ -69,7 +69,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="#">
+                <a className="text-decoration-none text-black" href="https://www.google.com/">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-bookmarks-fill"></i>
@@ -82,7 +82,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="#">
+                <a className="text-decoration-none text-black" href="https://www.google.com/">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-list-ul"></i>
@@ -95,7 +95,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="#">
+                <a className="text-decoration-none text-black" href="https://www.google.com/">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-person-fill"></i>
@@ -108,7 +108,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="#">
+                <a className="text-decoration-none text-black" href="https://www.google.com/">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-three-dots"></i>
