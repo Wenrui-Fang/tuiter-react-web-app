@@ -21,7 +21,7 @@ const PostItem = (
         <li className="list-group-item">
             <div className="row mt-2">
                 <div className="col-2">
-                    <img className="rounded-circle" src={post.avatarIcon} width={60} height={60}/>
+                    <img className="rounded-circle" alt="avatar" src={post.avatarIcon} width={60} height={60}/>
                 </div>
                 <div className="col-10">
                     <div className="fw-bolder">
@@ -32,7 +32,7 @@ const PostItem = (
                         <p className="fw-normal">{post.topic}</p>
                     </div>
                     <div className="wd-border-main overflow-hidden wd-content-img-border">
-                        <img width={504} height={300} src={post.image}/>
+                        <img width={504} height={300} alt="post image" src={post.image}/>
                     </div>
                     <div className="wd-border-main wd-content-img-text-border">
                         <div className="fw-bolder">{post.title}</div>
