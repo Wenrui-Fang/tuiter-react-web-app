@@ -20,7 +20,7 @@ const NavigationSidebar = (active) => {
                     </a>
                 </div>
                 ${active === 'explore' ? '<div class="list-group-item list-group-item-action active">' : '<div class="list-group-item list-group-item-action">'}
-                    <a href="../explore/index.html" class="text-decoration-none text-white">
+                    <a href="../ExploreScreen/index.html" class="text-decoration-none text-white">
                         <div class="row">
                             <div class="col-2">
                                 <i class="fas fa-hashtag"></i>

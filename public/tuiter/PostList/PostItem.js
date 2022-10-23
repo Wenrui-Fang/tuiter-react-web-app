@@ -12,7 +12,7 @@ const PostItem = (post) => {
     <li class="list-group-item bg-black">
         <div class="row mt-2">
             <div class="col-2">
-                <img class="rounded-circle" src=${post.avatarIcon} width="60px" height="60px">
+                <img class="rounded-circle" src=${post.avatarIcon} width="60px" height="60px"/>
             </div>
             <div class="col-10">
                 <div class="fw-bolder text-white">${post.userName}
@@ -22,7 +22,7 @@ const PostItem = (post) => {
                     <p class="fw-normal">${post.topic}</p>
                 </div>
                 <div class="wd-border-main overflow-hidden wd-content-img-border">
-                    <img width="504px" height="300px" src=${post.image}>
+                    <img width="504px" height="300px" src=${post.image}/>
                 </div>
                 ${temp}
                 <div class="row mt-2">
