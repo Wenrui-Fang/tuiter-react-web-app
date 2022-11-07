@@ -38,22 +38,18 @@ const EditProfile = () => {
             </div>
             <div className="pt-5">
                 <label className="ms-3 text-secondary">Name</label>
-                <textarea value={newProfile.firstName}
+                <input value={newProfile.name}
                           className="form-control border-1"
                           onChange={(event) => {
                               const value = event.target.value;
-                              // console.log(value)
-                              // const name = value.split(" ");
-                              // console.log(name)
                               const newP = {
-                                  ...userProfile,
-                                  firstName: value,
-                                  lastName: ""
+                                  ...newProfile,
+                                  name: value,
                               };
                               setNewProfile(newP);
                           }
                           }>
-               </textarea>
+               </input>
             </div>
             <div className="pt-3">
                 <label className="ms-3 text-secondary">Bio</label>
@@ -62,7 +58,7 @@ const EditProfile = () => {
                           onChange={(event) => {
                               const value = event.target.value;
                               const newP = {
-                                  ...userProfile,
+                                  ...newProfile,
                                   bio: value,
                               };
                               setNewProfile(newP);
@@ -72,33 +68,33 @@ const EditProfile = () => {
             </div>
             <div className="pt-3">
                 <label className="ms-3 text-secondary">Location</label>
-                <textarea value={newProfile.location}
+                <input value={newProfile.location}
                           className="form-control border-1"
                           onChange={(event) => {
                               const value = event.target.value;
                               const newP = {
-                                  ...userProfile,
+                                  ...newProfile,
                                   location: value,
                               };
                               setNewProfile(newP);
                           }
                           }>
-               </textarea>
+               </input>
             </div>
             <div className="pt-3">
-                <label className="ms-3 text-secondary">Website</label>
-                <textarea value={newProfile.website}
+                <input value={newProfile.website}
+                          placeholder="Website"
                           className="form-control border-1"
                           onChange={(event) => {
                               const value = event.target.value;
                               const newP = {
-                                  ...userProfile,
+                                  ...newProfile,
                                   website: value,
                               };
                               setNewProfile(newP);
                           }
                           }>
-               </textarea>
+               </input>
             </div>
             <div className="pt-3">
                 <label className="ms-3 text-secondary">Birthdate</label><br/>
@@ -106,7 +102,7 @@ const EditProfile = () => {
                        onChange={(event) => {
                            const value = event.target.value;
                            const newP = {
-                               ...userProfile,
+                               ...newProfile,
                                dateOfBirth: value,
                            };
                            setNewProfile(newP);
@@ -115,6 +111,7 @@ const EditProfile = () => {
             </div>
             <div className="pt-3">
                 Switch to professional
+                <i className="bi bi-caret-right float-end"></i>
             </div>
         </>
     );

@@ -5,7 +5,7 @@ const profileSlice = createSlice({
     name: 'profile',
     initialState: profile,
     reducers: {
-        updateProfile(state = profile, action) {
+        updateProfile(state, action) {
             return {...state, ...action.payload}
         }
     }

@@ -1,14 +1,13 @@
 {
-  "firstName": "Jose",
-  "lastName": "Annunziato",
-  "handle": "@jannunzi",
+  "name": "Wenrui Fang",
+  "handle": "@fangwenr",
   "profilePicture": "/images/bee.png",
   "bannerPicture": "/images/banner.jpeg",
-  "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.",
+  "bio": "Hi! My name is Wenrui Fang. I am a graduate student at Khoury College of Computer Science at Northeastern University currently.",
   "website": "youtube.com/webdevtv",
-  "location": "Boston, MA",
+  "location": "San Jose, CA",
   "dateOfBirth": "1997-06-02",
-  "dateJoined": "4/2009",
-  "followingCount": 340,
-  "followersCount": 223
+  "dateJoined": "March 2019",
+  "followingCount": 3410,
+  "followersCount": 2231
 }

@@ -13,8 +13,8 @@ const ProfileComponent = () => {
                     <i className="bi bi-arrow-left"></i>
                 </div>
                 <div className="col-11">
-                    <h5 className="fw-bolder m-0">{userProfile.firstName} {userProfile.lastName}</h5>
-                    <span className="text-secondary">6114 Tuits</span>
+                    <h5 className="fw-bolder m-0">{userProfile.name}</h5>
+                    <span className="text-secondary">520 Tuits</span>
                 </div>
             </div>
             <div className="position-relative mb-5">
@@ -27,7 +27,7 @@ const ProfileComponent = () => {
                 </Link>
             </div>
             <div className="ms-4 pt-5">
-                <h5 className="fw-bolder m-0">{userProfile.firstName} {userProfile.lastName}</h5>
+                <h5 className="fw-bolder m-0">{userProfile.name}</h5>
                 <span className="text-secondary">{userProfile.handle}</span>
                 <p className="pt-3">
                     {userProfile.bio}
