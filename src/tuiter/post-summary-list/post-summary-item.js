@@ -8,7 +8,7 @@ const PostSummaryItem = (
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
             "image": "/images/Tesla.png",
-            "tweets": ""
+            "retuits": ""
         }
     }
 ) => {
@@ -27,12 +27,9 @@ const PostSummaryItem = (
                     <div className="fw-bolder">
                         {post.title}
                     </div>
-                    <div className="text-secondary">
-                        {post.tweets}
-                    </div>
                 </div>
                 <div className="col-2">
-                    <img width={70} height={70} className="float-end rounded-3" alt="post" src={post.image}/>
+                    <img width={70} height={70} className="float-end rounded-3 mt-3" alt="post" src={post.image}/>
                 </div>
             </div>
         </li>

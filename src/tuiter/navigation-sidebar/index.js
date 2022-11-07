@@ -5,7 +5,12 @@ import {Link} from "react-router-dom";
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    const active = paths[2];
+    let active;
+    if (paths.length === 3 && paths[2] !== "") {
+        active = paths[2];
+    } else {
+        active = 'home';
+    }
     return (
         <div className="list-group">
             <Link to="/" className="list-group-item">
@@ -17,7 +22,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
-                <Link to="/tuiter/home" className="text-decoration-none text-black">
+                <Link to="/tuiter" className="text-decoration-none text-black">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-house-fill"></i>
@@ -95,7 +100,7 @@ const NavigationSidebar = () => {
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
-                <a className="text-decoration-none text-black" href="https://www.google.com/">
+                <Link to="/tuiter/profile" className="text-decoration-none text-black">
                     <div className="row">
                         <div className="col-2">
                             <i className="bi bi-person-fill"></i>
@@ -104,7 +109,7 @@ const NavigationSidebar = () => {
                             <span className="d-none d-xl-block">Profile</span>
                         </div>
                     </div>
-                </a>
+                </Link>
             </div>
 
             <div className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
