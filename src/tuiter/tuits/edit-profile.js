@@ -38,7 +38,7 @@ const EditProfile = () => {
             </div>
             <div className="pt-5">
                 <label className="ms-3 text-secondary">Name</label>
-                <textarea value={newProfile.firstName + " " + newProfile.lastName}
+                <textarea value={newProfile.firstName}
                           className="form-control border-1"
                           onChange={(event) => {
                               const value = event.target.value;
