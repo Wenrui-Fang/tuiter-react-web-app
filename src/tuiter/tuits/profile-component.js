@@ -1,7 +1,6 @@
 import React from "react";
 import {useSelector} from "react-redux";
 import "./index.css";
-import {createTuit} from "./home-post-reducer";
 import {Link} from "react-router-dom";
 
 const ProfileComponent = () => {

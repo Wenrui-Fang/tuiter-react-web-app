@@ -2,7 +2,6 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
-import TuitsList from "./tuits/tuits-list";
 import {Route, Routes} from "react-router";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
